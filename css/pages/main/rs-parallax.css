@@ -1,0 +1,93 @@
+.rs-parallax {
+  height: 468px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 128px;
+  background: #082048;
+  background-image: url(../../../img/pages/main/rs-parallax/paralax.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media (max-width: 1600px) and (min-width: 320px) {
+  .rs-parallax {
+    height: calc(326px + (458 - 326) * ((100vw - 320px) / (1600 - 320)));
+  }
+}
+
+@media (max-width: 1600px) and (min-width: 320px) {
+  .rs-parallax {
+    margin-top: calc(45px + (128 - 45) * ((100vw - 320px) / (1600 - 320)));
+  }
+}
+
+.rs-parallax__content {
+  z-index: 2;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+@media (max-width: 480px) {
+  .rs-parallax__content {
+    text-align: left;
+  }
+}
+
+.rs-parallax__body h3 {
+  color: #fff;
+}
+
+.rs-parallax__buttons {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 1600px) and (min-width: 320px) {
+  .rs-parallax__buttons {
+    margin-top: calc(10px + (40 - 10) * ((100vw - 320px) / (1600 - 320)));
+  }
+}
+
+@media (max-width: 480px) {
+  .rs-parallax__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .rs-parallax__buttons a {
+    width: 100%;
+  }
+}
+
+@media (min-width: 481px) {
+  .rs-parallax__buttons a {
+    margin: 0px 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .rs-parallax__buttons a {
+    margin: 7.5px 0px;
+  }
+}
